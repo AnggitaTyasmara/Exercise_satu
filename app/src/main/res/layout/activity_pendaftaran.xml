@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="@string/pendaftaran"
+            android:textSize="15pt"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="15dp"
+            android:background="#22EE" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namavalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/masukkan_nama"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/alamatvalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/masukkan_alamat"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:singleLine="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/jenis_kelamin" />
+
+            <RadioGroup
+                android:id="@+id/JKvalid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/laki_laki" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/perempuan" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/agama" />
+
+            <RadioGroup
+                android:id="@+id/Agamavalid"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbIslam"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/islam" />
+
+                <RadioButton
+                    android:id="@+id/rbKatolik"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/katolik" />
+
+                <RadioButton
+                    android:id="@+id/rbKristen"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/kristen" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Agamavalid2"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbHindu"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/hindu" />
+
+                <RadioButton
+                    android:id="@+id/rbBudha"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/budha" />
+
+                <RadioButton
+                    android:id="@+id/rbKonghucu"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/konghucu" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Agamavalid3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbPK"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/penganut_kepercayaan" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emaildafarvalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edEmaildaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/masukkan_email_daftar"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passworddaftarvalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edPassworddaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/masukkan_password_daftar"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Passworddaftarkembalivalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edPassworddaftarkembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="@string/masukkan_kembali_password_daftar"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btbatal"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/batal"
+                app:cornerRadius="30dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btdaftar"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/daftar"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
